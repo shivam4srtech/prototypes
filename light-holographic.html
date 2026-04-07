@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: { sans: ['Poppins', 'sans-serif'] },
+        colors: {
+          'brand-purple': '#7c3aed',
+          'brand-light': '#f3f4f6',
+        }
+      }
+    }
+  }
+</script>
+<style>
+  .text-gradient-purple {
+    background: linear-gradient(to right, #7c3aed, #db2777);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .bg-purple-soft {
+    background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
+  }
+</style>
+
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="bg-white text-gray-900 min-h-screen">
+  
+  <nav class="flex items-center justify-between md:px-10 px-5 py-3 border-b border-gray-100 bg-white/80 backdrop-blur-md sticky top-0 z-50">
+    <div class="text-2xl font-bold tracking-tight text-gray-900">
+      Legal<span class="text-brand-purple">LABS.</span>
+    </div>
+    <div class="hidden md:flex space-x-10 text-sm font-semibold text-gray-600">
+      <a href="#" class="text-brand-purple">HOME</a>
+      <a href="#" class="hover:text-brand-purple transition">SERVICES</a>
+      <a href="#" class="hover:text-brand-purple transition">ABOUT</a>
+      <a href="#" class="hover:text-brand-purple transition">CONTACT</a>
+    </div>
+    <button class="bg-purple-soft px-8 py-2.5 rounded-full text-white font-medium hover:opacity-90 transition shadow-lg shadow-purple-200 flex items-center gap-2">
+      Contact Us <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+    </button>
+  </nav>
+
+  <section class="grid grid-cols-1 lg:grid-cols-2 items-center py-5 md:px-10 px-5 gap-16 max-w-7xl mx-auto">
+    <div class="space-y-8">
+      <div class="inline-block px-4 py-1.5 rounded-full border border-purple-100 bg-purple-50 text-brand-purple text-sm font-medium">
+        ✨ Your Vision, Expertly Engineered
+      </div>
+      <h1 class="text-5xl md:text-7xl font-bold leading-[1.1] text-gray-900">
+        Empowering <br>
+        <span class="text-gradient-purple">Legal Excellence</span>
+      </h1>
+      <p class="text-gray-500 text-lg max-w-xl leading-relaxed">
+        Professional consultancy for Business Setup, Tax Audit, and BIS registrations. We handle the complexity so you can focus on growth.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <span class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-600 font-medium">Business Setup</span>
+        <span class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-600 font-medium">Tax & Audit</span>
+        <span class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-600 font-medium">BIS Registration</span>
+      </div>
+    </div>
+
+    <div class="relative flex items-center justify-center">
+      <div class="absolute w-72 h-72 bg-purple-200/50 rounded-full blur-[100px] -top-10 -right-10"></div>
+      <div class="absolute w-72 h-72 bg-pink-100/50 rounded-full blur-[100px] -bottom-10 -left-10"></div>
+      
+      <div class="relative w-full max-w-md p-8 bg-white/40 border border-white/60 backdrop-blur-xl rounded-[2rem] shadow-2xl shadow-purple-100/50 border-white/80">
+        <div class="space-y-6">
+          <div class="w-14 h-14 bg-purple-soft rounded-2xl flex items-center justify-center text-white shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900">100% Compliance</h3>
+          <p class="text-gray-500">Our digital-first approach ensures your legal filings are always accurate and on time.</p>
+          <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+            <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Global Standards</span>
+            <div class="flex -space-x-2">
+              <div class="w-8 h-8 rounded-full bg-purple-100 border-2 border-white"></div>
+              <div class="w-8 h-8 rounded-full bg-pink-100 border-2 border-white"></div>
+              <div class="w-8 h-8 rounded-full bg-blue-100 border-2 border-white"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-gray-50/50 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <h2 class="text-4xl font-bold mb-6 text-gray-900">What Our <br><span class="text-gradient-purple">Clients Say</span></h2>
+        <div class="p-8 bg-white border border-gray-200 rounded-[2rem] shadow-xl shadow-gray-200/50 relative">
+          <div class="text-4xl text-purple-200 absolute top-4 right-8 font-serif">“</div>
+          <p class="text-lg text-gray-600 italic mb-6">"LegalLABS transformed our import process. Their expertise in BIS and IEC was exactly what we needed to scale our operations globally."</p>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center font-bold text-brand-purple">AM</div>
+            <div>
+              <p class="font-bold text-gray-900">Arjun Mehta</p>
+              <p class="text-sm text-gray-400">Director, Global Logistics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="space-y-6">
+        <div class="p-6 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition">
+          <p class="text-sm text-gray-500">"The best tax audit experience we've had. Clean, fast, and digital."</p>
+          <p class="mt-2 font-bold text-xs text-brand-purple">— Sarah Khan, CEO</p>
+        </div>
+        <div class="p-6 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition ml-10">
+          <p class="text-sm text-gray-500">"Professional legal consultancy that actually understands startups."</p>
+          <p class="mt-2 font-bold text-xs text-brand-purple">— Rohit V., Founder</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-10 max-w-5xl mx-auto">
+    <div class="bg-white border border-gray-100 rounded-[3rem] p-12 shadow-2xl shadow-purple-100 flex flex-col items-center text-center">
+      <h2 class="text-4xl font-bold mb-4">Start Your <span class="text-gradient-purple">Journey</span></h2>
+      <p class="text-gray-500 mb-10">Fill out the form below and we'll reach out within the hour.</p>
+      
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+        <input type="text" placeholder="Name" class="bg-gray-50 border border-gray-100 rounded-xl px-6 py-4 focus:ring-2 focus:ring-purple-200 outline-none transition">
+        <input type="email" placeholder="Email" class="bg-gray-50 border border-gray-100 rounded-xl px-6 py-4 focus:ring-2 focus:ring-purple-200 outline-none transition">
+        <select class="bg-gray-50 border border-gray-100 rounded-xl px-6 py-4 focus:ring-2 focus:ring-purple-200 outline-none transition col-span-full">
+          <option>Select Service</option>
+          <option>Business Setup</option>
+          <option>Import Export</option>
+        </select>
+        <button class="bg-purple-soft py-4 rounded-xl text-white font-bold col-span-full shadow-lg shadow-purple-200 hover:-translate-y-1 transition">Get Free Consultation</button>
+      </form>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
